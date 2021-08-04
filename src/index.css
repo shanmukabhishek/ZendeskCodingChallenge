@@ -38,3 +38,7 @@ table, th, td {
   right: 0;
   /* background-color: red; */
 }
+
+td {
+  cursor : pointer;
+}
