@@ -38,16 +38,9 @@ export default class ShowTickets extends React.Component {
 
             )
             .catch(err => console.log(err));
-        // console.log(res);
-        // }).then(res => {
-        //     const data = res.json();
-        //     this.setState({ tickets: data });
-        // }).catch(error => console.error(error));
     }
 
     showIndividualTicket() {
-        //    const ticketDetails = this.state.tickets[ticketId];
-        // window.alert(JSON.stringify(ticketDetails));
         return <React.Fragment>
             <div><b>Ticket Id:</b> {this.state.curTicketDetails.id} </div>
             <div><b>Requester Id:</b>  {this.state.curTicketDetails.requester_id} </div>

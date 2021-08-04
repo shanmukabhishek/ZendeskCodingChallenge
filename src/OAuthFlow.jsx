@@ -11,8 +11,6 @@ export default class OAuth extends React.Component{
     }
     componentDidMount(){
         const isAuthorized = window.localStorage.getItem('authToken');
-        // console.log(window.localStorage.getItem("aaa"));
-        // console.log(window.location)
         if (isAuthorized!=='undefined' && isAuthorized) {
             this.setState({redirectToTickets:true});
         }
